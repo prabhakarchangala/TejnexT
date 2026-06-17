@@ -1,5 +1,746 @@
-Vinayaka
-Namo Venkateshaya
-Sun
-Jai Hanuman
-SaiRam
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>TejNext AI — Building the Future with Artificial Intelligence</title>
+<meta name="description" content="TejNext AI builds enterprise-grade Artificial Intelligence, Machine Learning, Generative AI, Analytics and Intelligent Automation." />
+<meta name="theme-color" content="#050816" />
+<meta property="og:title" content="TejNext AI — Transforming Ideas Into Intelligence" />
+<meta property="og:description" content="Enterprise AI, ML, Generative AI, Analytics & Automation by TejNext AI." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          background: '#050816',
+          card: '#0F172A',
+          surface: '#0F172A',
+          foreground: '#F8FAFC',
+          muted: '#1E293B',
+          mutedfg: '#94A3B8',
+          primary: '#00E5FF',
+          secondary: '#7C3AED',
+          accent: '#00FF9D',
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+        boxShadow: {
+          glow: '0 0 40px -8px rgba(0,229,255,0.5)',
+          glowV: '0 0 40px -8px rgba(124,58,237,0.55)',
+          elevated: '0 20px 60px -20px rgba(0,0,0,0.8)',
+        },
+        animation: {
+          float: 'float 6s ease-in-out infinite',
+          'pulse-slow': 'pulseSlow 4s ease-in-out infinite',
+          'glow-pulse': 'glowPulse 3s ease-in-out infinite',
+          gradient: 'gradient 8s ease infinite',
+          'fade-up': 'fadeUp .8s cubic-bezier(.22,1,.36,1) both',
+        },
+        keyframes: {
+          float: { '0%,100%': { transform: 'translateY(0) translateX(0)' }, '50%': { transform: 'translateY(-18px) translateX(8px)' } },
+          pulseSlow: { '0%,100%': { opacity: '0.55' }, '50%': { opacity: '1' } },
+          glowPulse: {
+            '0%,100%': { boxShadow: '0 0 25px rgba(0,229,255,0.3), 0 0 50px rgba(124,58,237,0.2)' },
+            '50%': { boxShadow: '0 0 50px rgba(0,229,255,0.6), 0 0 90px rgba(124,58,237,0.4)' },
+          },
+          gradient: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
+          fadeUp: { '0%': { opacity: 0, transform: 'translateY(28px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #050816; color: #F8FAFC; font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(124,58,237,0.18), transparent 45%),
+      radial-gradient(circle at 80% 100%, rgba(0,229,255,0.14), transparent 45%);
+    background-attachment: fixed;
+  }
+  h1,h2,h3,h4,h5 { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.02em; }
+  ::selection { background: rgba(0,229,255,.3); color: #fff; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #050816; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#00E5FF,#7C3AED); border-radius: 8px; }
+
+  .text-gradient {
+    background: linear-gradient(135deg,#00E5FF 0%, #7C3AED 50%, #00FF9D 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: gradient 8s ease infinite;
+  }
+  .text-gradient-cyan {
+    background: linear-gradient(135deg,#00E5FF,#7C3AED);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .bg-brand { background: linear-gradient(135deg,#00E5FF 0%, #7C3AED 50%, #00FF9D 100%); }
+  .glass { background: rgba(15,23,42,.5); backdrop-filter: blur(20px) saturate(140%); border: 1px solid rgba(255,255,255,.08); }
+  .glass-strong { background: rgba(15,23,42,.78); backdrop-filter: blur(24px) saturate(160%); border: 1px solid rgba(255,255,255,.1); }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0,229,255,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 70%);
+            mask-image: radial-gradient(ellipse at center, #000 30%, transparent 70%);
+  }
+  .border-gradient { position: relative; background: #0F172A; border: 1px solid transparent; border-radius: 1.25rem; }
+  .border-gradient::before {
+    content:""; position:absolute; inset:0; border-radius: inherit; padding:1px;
+    background: linear-gradient(135deg, rgba(0,229,255,.45), rgba(124,58,237,.45), rgba(0,255,157,.45));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events:none;
+  }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-bg {
+    background:
+      radial-gradient(ellipse at top, rgba(124,58,237,.25), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(0,229,255,.18), transparent 50%),
+      radial-gradient(ellipse at bottom left, rgba(0,255,157,.1), transparent 50%);
+  }
+  @keyframes orbit { to { transform: rotate(360deg); } }
+  .orbit-ring { animation: orbit 18s linear infinite; }
+</style>
+</head>
+<body class="bg-background text-foreground">
+
+<!-- Neural background -->
+<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <canvas id="neural" class="absolute inset-0 w-full h-full opacity-60"></canvas>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
+</div>
+
+<!-- Logo SVG symbol -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF"/><stop offset="55%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#00FF9D"/>
+    </linearGradient>
+    <filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <symbol id="logoN" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="29" stroke="url(#logoGrad)" stroke-width="1.5" opacity=".35" fill="none"/>
+      <circle cx="32" cy="32" r="29" stroke="url(#logoGrad)" stroke-width=".5" stroke-dasharray="2 4" opacity=".5" fill="none"/>
+      <g filter="url(#logoGlow)" stroke="url(#logoGrad)" stroke-width="3.2" stroke-linecap="round">
+        <line x1="16" y1="14" x2="16" y2="50"/><line x1="16" y1="14" x2="48" y2="50"/><line x1="48" y1="14" x2="48" y2="50"/>
+      </g>
+      <g fill="#00E5FF"><circle cx="16" cy="14" r="2.6"/><circle cx="48" cy="50" r="2.6"/></g>
+      <g fill="#00FF9D"><circle cx="48" cy="14" r="2.6"/><circle cx="16" cy="50" r="2.6"/></g>
+      <circle cx="32" cy="32" r="2.4" fill="#7C3AED"/>
+      <g stroke="url(#logoGrad)" stroke-width=".8" opacity=".6" fill="none">
+        <path d="M16 32 L8 32"/><path d="M48 32 L56 32"/><path d="M32 14 L32 6"/><path d="M32 50 L32 58"/>
+      </g>
+      <g fill="url(#logoGrad)">
+        <circle cx="8" cy="32" r="1.4"/><circle cx="56" cy="32" r="1.4"/><circle cx="32" cy="6" r="1.4"/><circle cx="32" cy="58" r="1.4"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 py-4 transition-all">
+  <div class="mx-auto max-w-7xl px-4">
+    <div id="navInner" class="glass flex items-center justify-between rounded-2xl px-4 py-3 transition-all">
+      <a href="#home" class="flex items-center gap-2.5">
+        <svg width="34" height="34"><use href="#logoN"/></svg>
+        <span class="flex flex-col leading-none">
+          <span class="font-display text-lg font-bold tracking-tight">TejNext<span class="text-gradient-cyan"> AI</span></span>
+          <span class="text-[9px] font-mono uppercase tracking-[.18em] text-mutedfg">Transforming ideas into intelligence</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="#home" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Home</a>
+        <a href="#solutions" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Solutions</a>
+        <a href="#services" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Services</a>
+        <a href="#products" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Products</a>
+        <a href="#industries" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Industries</a>
+        <a href="#about" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">About</a>
+        <a href="#blog" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Blog</a>
+        <a href="#contact" class="rounded-lg px-3 py-2 text-sm text-mutedfg hover:bg-white/5 hover:text-foreground">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden lg:inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-2.5 text-sm font-semibold text-background shadow-glow hover:scale-105 transition">
+        Book a Demo <span>→</span>
+      </a>
+      <button id="mBtn" class="lg:hidden rounded-lg p-2" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mMenu" class="hidden glass-strong mt-2 rounded-2xl p-2 lg:hidden">
+      <a href="#home" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Home</a>
+      <a href="#solutions" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Solutions</a>
+      <a href="#services" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Services</a>
+      <a href="#products" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Products</a>
+      <a href="#industries" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Industries</a>
+      <a href="#about" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">About</a>
+      <a href="#blog" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Blog</a>
+      <a href="#contact" class="block rounded-lg px-4 py-3 text-sm text-mutedfg hover:bg-white/5">Contact</a>
+      <a href="#contact" class="mt-2 block text-center rounded-xl bg-brand px-4 py-3 text-sm font-semibold text-background">Book a Demo</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative pt-36 sm:pt-44 pb-24 sm:pb-32 overflow-hidden">
+  <div class="mx-auto max-w-7xl px-4 grid lg:grid-cols-[1.15fr_1fr] gap-12 items-center">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-widest text-primary backdrop-blur">
+        <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-accent"></span></span>
+        Enterprise AI · Generative AI · Analytics
+      </div>
+      <h1 class="mt-6 text-5xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-bold leading-[1.02] tracking-tight">
+        Building the <span class="text-gradient">Future</span> with<br/>Artificial Intelligence
+      </h1>
+      <p class="mt-6 max-w-xl text-lg sm:text-xl leading-relaxed text-mutedfg">
+        AI, Machine Learning, Generative AI, Analytics, Automation and Intelligent Enterprise Solutions — engineered for the next decade of business.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="group inline-flex items-center gap-2 rounded-xl bg-brand px-7 py-4 text-sm font-semibold text-background shadow-glow hover:shadow-[0_0_60px_-10px_rgba(0,229,255,.7)] transition">
+          Book a Demo <span class="transition group-hover:translate-x-1">→</span>
+        </a>
+        <a href="#solutions" class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-foreground backdrop-blur hover:border-primary/50 hover:bg-white/10 transition">
+          Explore Solutions <span>↗</span>
+        </a>
+      </div>
+      <div class="mt-12 grid max-w-xl grid-cols-3 gap-6">
+        <div class="border-l border-primary/30 pl-4"><div class="text-3xl font-bold text-gradient-cyan">98%</div><div class="mt-1 text-xs uppercase tracking-wider text-mutedfg">Model Accuracy</div></div>
+        <div class="border-l border-primary/30 pl-4"><div class="text-3xl font-bold text-gradient-cyan">50+</div><div class="mt-1 text-xs uppercase tracking-wider text-mutedfg">AI Deployments</div></div>
+        <div class="border-l border-primary/30 pl-4"><div class="text-3xl font-bold text-gradient-cyan">10x</div><div class="mt-1 text-xs uppercase tracking-wider text-mutedfg">Faster Insights</div></div>
+      </div>
+    </div>
+
+    <!-- Neural orb -->
+    <div class="relative mx-auto aspect-square w-full max-w-[520px] reveal">
+      <div class="absolute inset-0 rounded-full border border-primary/20 animate-pulse-slow"></div>
+      <div class="absolute inset-6 rounded-full border border-secondary/20"></div>
+      <div class="absolute inset-12 rounded-full border border-accent/20"></div>
+      <div class="absolute inset-0 rounded-full orbit-ring" style="background: conic-gradient(from 0deg, transparent 0%, rgba(0,229,255,.4) 30%, transparent 60%, rgba(124,58,237,.4) 80%, transparent 100%); -webkit-mask: radial-gradient(circle, transparent 60%, black 61%, black 70%, transparent 71%); mask: radial-gradient(circle, transparent 60%, black 61%, black 70%, transparent 71%);"></div>
+      <div class="absolute inset-1/4 rounded-full glass-strong animate-glow-pulse grid place-items-center" style="background: radial-gradient(circle at 35% 30%, rgba(0,229,255,.4), rgba(124,58,237,.3) 50%, rgba(5,8,22,.9) 80%)">
+        <svg viewBox="0 0 120 120" class="w-3/4 h-3/4">
+          <g stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" fill="none">
+            <line x1="30" y1="20" x2="30" y2="100"/><line x1="30" y1="20" x2="90" y2="100"/><line x1="90" y1="20" x2="90" y2="100"/>
+          </g>
+          <g fill="#00E5FF"><circle cx="30" cy="20" r="4"/><circle cx="90" cy="100" r="4"/></g>
+          <g fill="#00FF9D"><circle cx="90" cy="20" r="4"/><circle cx="30" cy="100" r="4"/></g>
+          <circle cx="60" cy="60" r="3" fill="#7C3AED"/>
+        </svg>
+      </div>
+      <!-- Floating chips -->
+      <div class="absolute left-[-4%] top-[18%] glass-strong rounded-2xl px-4 py-3 shadow-elevated animate-float">
+        <div class="flex items-center gap-2.5"><div class="grid h-8 w-8 place-items-center rounded-lg bg-primary/10 text-primary">⚡</div>
+        <div><div class="text-[10px] uppercase tracking-wider text-mutedfg">Neural Net</div><div class="font-mono text-sm font-semibold">2.4B params</div></div></div>
+      </div>
+      <div class="absolute right-[-6%] top-[35%] glass-strong rounded-2xl px-4 py-3 shadow-elevated animate-float" style="animation-delay:.6s">
+        <div class="flex items-center gap-2.5"><div class="grid h-8 w-8 place-items-center rounded-lg bg-accent/10 text-accent">⚡</div>
+        <div><div class="text-[10px] uppercase tracking-wider text-mutedfg">Latency</div><div class="font-mono text-sm font-semibold">48ms</div></div></div>
+      </div>
+      <div class="absolute left-[2%] bottom-[14%] glass-strong rounded-2xl px-4 py-3 shadow-elevated animate-float" style="animation-delay:1.2s">
+        <div class="flex items-center gap-2.5"><div class="grid h-8 w-8 place-items-center rounded-lg bg-secondary/10 text-secondary">↗</div>
+        <div><div class="text-[10px] uppercase tracking-wider text-mutedfg">Accuracy</div><div class="font-mono text-sm font-semibold">98.7%</div></div></div>
+      </div>
+      <div class="absolute right-[-2%] bottom-[26%] glass-strong rounded-2xl px-4 py-3 shadow-elevated animate-float" style="animation-delay:1.8s">
+        <div class="flex items-center gap-2.5"><div class="grid h-8 w-8 place-items-center rounded-lg bg-primary/10 text-primary">●</div>
+        <div><div class="text-[10px] uppercase tracking-wider text-mutedfg">GPU Cluster</div><div class="font-mono text-sm font-semibold">Online</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGO STRIP ============ -->
+<section class="border-y border-white/5 py-10">
+  <div class="mx-auto max-w-7xl px-4">
+    <p class="mb-6 text-center text-xs font-mono uppercase tracking-[.2em] text-mutedfg">Powered by an enterprise-grade AI stack</p>
+    <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm font-display font-semibold tracking-[.2em] text-mutedfg/70">
+      <span class="hover:text-primary transition">AZURE</span><span class="hover:text-primary transition">OPENAI</span>
+      <span class="hover:text-primary transition">MICROSOFT FABRIC</span><span class="hover:text-primary transition">POWER BI</span>
+      <span class="hover:text-primary transition">LANGCHAIN</span><span class="hover:text-primary transition">.NET</span><span class="hover:text-primary transition">PYTHON</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTIONS ============ -->
+<section id="solutions" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Solutions</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">End-to-end <span class="text-gradient">AI capability</span> for the modern enterprise</h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">From strategy to deployment, we partner with leaders to build the intelligent systems that define what comes next.</p>
+    </div>
+    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <!-- card -->
+      <div class="border-gradient group relative overflow-hidden p-6 hover:-translate-y-1 transition reveal">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary/10 blur-3xl"></div>
+        <div class="relative">
+          <div class="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary text-xl">🧠</div>
+          <h3 class="text-lg font-semibold">AI Strategy</h3>
+          <p class="mt-2 text-sm text-mutedfg leading-relaxed">Roadmaps that align AI investment with measurable business outcomes.</p>
+        </div>
+      </div>
+      <div class="border-gradient group relative overflow-hidden p-6 hover:-translate-y-1 transition reveal">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="relative">
+          <div class="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary text-xl">🤖</div>
+          <h3 class="text-lg font-semibold">Generative AI</h3>
+          <p class="mt-2 text-sm text-mutedfg leading-relaxed">LLM apps, copilots, and RAG systems built on your proprietary data.</p>
+        </div>
+      </div>
+      <div class="border-gradient group relative overflow-hidden p-6 hover:-translate-y-1 transition reveal">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/10 blur-3xl"></div>
+        <div class="relative">
+          <div class="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary text-xl">⚙️</div>
+          <h3 class="text-lg font-semibold">Intelligent Automation</h3>
+          <p class="mt-2 text-sm text-mutedfg leading-relaxed">Agentic workflows that handle the work humans shouldn't have to.</p>
+        </div>
+      </div>
+      <div class="border-gradient group relative overflow-hidden p-6 hover:-translate-y-1 transition reveal">
+        <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary/10 blur-3xl"></div>
+        <div class="relative">
+          <div class="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary text-xl">📊</div>
+          <h3 class="text-lg font-semibold">Decision Intelligence</h3>
+          <p class="mt-2 text-sm text-mutedfg leading-relaxed">Real-time analytics that turn dashboards into autonomous decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Services</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">Twelve disciplines. <span class="text-gradient">One outcome.</span></h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">Cross-functional teams of AI engineers, data scientists, and architects — delivering measurable transformation.</p>
+    </div>
+    <div id="servicesGrid" class="grid gap-px overflow-hidden rounded-3xl bg-white/5 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Products</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">Production-grade <span class="text-gradient">AI platforms</span></h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">Our flagship products are deployed across healthcare, finance, and global enterprise — built for scale, security, and speed.</p>
+    </div>
+    <div id="productsGrid" class="grid gap-6 md:grid-cols-2"></div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section id="industries" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Industries</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">Built for the <span class="text-gradient">industries that move the world</span></h2>
+    </div>
+    <div id="industriesGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ About TejNext AI</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">We exist to make every enterprise <span class="text-gradient">intelligent</span></h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">Founded by engineers who've built mission-critical systems at scale, TejNext AI is on a mission to transform ideas into intelligence — for organizations that refuse to be left behind.</p>
+    </div>
+
+    <div class="mb-20 grid gap-6 md:grid-cols-3">
+      <div class="border-gradient p-8 reveal"><div class="text-primary text-2xl">🎯</div><h3 class="mt-5 text-xl font-semibold">Our Mission</h3><p class="mt-2 text-sm text-mutedfg leading-relaxed">Empower enterprises to harness AI as their primary competitive advantage.</p></div>
+      <div class="border-gradient p-8 reveal"><div class="text-primary text-2xl">👁</div><h3 class="mt-5 text-xl font-semibold">Our Vision</h3><p class="mt-2 text-sm text-mutedfg leading-relaxed">A world where every business decision is augmented by intelligent systems.</p></div>
+      <div class="border-gradient p-8 reveal"><div class="text-primary text-2xl">❤</div><h3 class="mt-5 text-xl font-semibold">Our Values</h3><p class="mt-2 text-sm text-mutedfg leading-relaxed">Engineering excellence, customer obsession, and uncompromising integrity.</p></div>
+    </div>
+
+    <div class="relative">
+      <div class="absolute left-4 md:left-1/2 top-0 h-full w-px bg-gradient-to-b from-primary via-secondary to-accent"></div>
+      <div id="timeline" class="space-y-12"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Why TejNext AI</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">The reasons enterprises <span class="text-gradient">trust us</span> with what matters</h2>
+    </div>
+    <div id="whyGrid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Technology</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">A best-in-class <span class="text-gradient">AI stack</span></h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">We work with the tools that ship — battle-tested, enterprise-ready, and continuously evolving.</p>
+    </div>
+    <div id="techGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3"></div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="border-gradient relative overflow-hidden p-8 md:p-14 rounded-[2rem]">
+      <div class="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-secondary/20 blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-primary/20 blur-3xl"></div>
+      <div class="relative grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+        <div class="relative mx-auto w-full max-w-sm">
+          <div class="aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/20 p-1">
+            <div class="grid h-full w-full place-items-center rounded-3xl bg-card text-center">
+              <div>
+                <div class="mx-auto grid h-32 w-32 place-items-center rounded-full bg-brand text-5xl font-bold text-background shadow-glow">PC</div>
+                <div class="mt-6 font-mono text-xs uppercase tracking-widest text-primary">Founder · Chief AI Architect</div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-4 -right-4 glass-strong rounded-2xl px-4 py-3 shadow-elevated">
+            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-accent animate-pulse"></span><span class="font-mono text-xs uppercase tracking-wider">Available for advisory</span></div>
+          </div>
+        </div>
+        <div>
+          <span class="inline-block rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 font-mono text-xs uppercase tracking-[.2em] text-primary">Meet the founder</span>
+          <h2 class="mt-5 text-4xl sm:text-5xl font-bold tracking-tight">Prabhakara Changala</h2>
+          <p class="mt-2 text-lg text-mutedfg">Founder &amp; Chief AI Architect</p>
+          <p class="mt-6 max-w-xl text-base text-mutedfg leading-relaxed">Experienced technology leader specializing in Artificial Intelligence, Machine Learning, Enterprise Analytics, Cloud Architecture, Microsoft Fabric, .NET, and Digital Transformation solutions.</p>
+          <div class="mt-8 grid gap-3 sm:grid-cols-2">
+            <div class="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-accent">✓</span><span class="text-sm">AI Solution Architect</span></div>
+            <div class="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-accent">✓</span><span class="text-sm">Microsoft Fabric Specialist</span></div>
+            <div class="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-accent">✓</span><span class="text-sm">Enterprise Analytics Expert</span></div>
+            <div class="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-accent">✓</span><span class="text-sm">Healthcare Technology Innovator</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Client Voice</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">What leaders <span class="text-gradient">say about us</span></h2>
+    </div>
+    <div id="testGrid" class="grid gap-6 md:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-3xl text-center mb-14 reveal">
+      <div class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[.18em] text-primary">✦ Insights</div>
+      <h2 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05]">From the <span class="text-gradient">TejNext lab</span></h2>
+      <p class="mt-5 text-base sm:text-lg text-mutedfg">Field notes, architecture deep-dives, and perspectives from the front lines of enterprise AI.</p>
+    </div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <article class="group relative overflow-hidden rounded-3xl border border-white/10 bg-card/60 p-8 backdrop-blur hover:border-primary/40 transition reveal">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-secondary/10 to-transparent opacity-50"></div>
+        <div class="aspect-[16/9] rounded-2xl bg-brand opacity-90"></div>
+        <div class="mt-6 flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-mutedfg">
+          <span class="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-primary">Generative AI</span> Jun 2026 · 8 min
+        </div>
+        <h3 class="mt-4 text-2xl md:text-3xl font-bold leading-tight group-hover:text-primary transition">The Future of Generative AI in the Enterprise</h3>
+        <p class="mt-3 text-mutedfg">How generative AI is reshaping enterprise workflows — and what your AI investment should look like for the next 24 months.</p>
+        <a href="#" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary">Read article →</a>
+      </article>
+      <div id="blogList" class="grid gap-4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-28">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="border-gradient relative overflow-hidden p-8 md:p-14 rounded-[2rem]">
+      <div class="absolute -right-40 top-0 h-[500px] w-[500px] rounded-full bg-primary/20 blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-20 h-[500px] w-[500px] rounded-full bg-secondary/20 blur-3xl"></div>
+      <div class="relative grid gap-12 lg:grid-cols-[1fr_1.2fr]">
+        <div>
+          <span class="inline-block rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 font-mono text-xs uppercase tracking-[.2em] text-primary">Contact</span>
+          <h2 class="mt-5 text-4xl sm:text-5xl font-bold tracking-tight">Let's build your <span class="text-gradient">AI advantage</span></h2>
+          <p class="mt-4 max-w-md text-mutedfg">Tell us about your initiative. We'll respond within one business day with a tailored next step.</p>
+          <div class="mt-10 space-y-4">
+            <a href="mailto:tejnext.ai@gmail.com" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 hover:border-primary/40 transition">
+              <div class="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary">✉</div>
+              <div><div class="text-[11px] font-mono uppercase tracking-widest text-mutedfg">Email</div><div class="font-medium">tejnext.ai@gmail.com</div></div>
+            </a>
+            <a href="tel:+918121437353" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 hover:border-primary/40 transition">
+              <div class="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary">☎</div>
+              <div><div class="text-[11px] font-mono uppercase tracking-widest text-mutedfg">Phone</div><div class="font-medium">+91 8121 437 353</div></div>
+            </a>
+            <a href="https://www.tejnext.com" class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 hover:border-primary/40 transition">
+              <div class="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary">🌐</div>
+              <div><div class="text-[11px] font-mono uppercase tracking-widest text-mutedfg">Website</div><div class="font-medium">www.tejnext.com</div></div>
+            </a>
+          </div>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Thanks! We will reach out within one business day.');" class="rounded-3xl border border-white/10 bg-card/80 p-7 md:p-9 backdrop-blur">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div><label class="mb-2 block text-xs font-mono uppercase tracking-widest text-mutedfg">Full name</label><input required placeholder="Your name" class="w-full rounded-xl border border-white/10 bg-background/60 px-4 py-3 text-sm outline-none focus:border-primary/60 focus:bg-background placeholder:text-mutedfg/60"/></div>
+            <div><label class="mb-2 block text-xs font-mono uppercase tracking-widest text-mutedfg">Company</label><input required placeholder="Company" class="w-full rounded-xl border border-white/10 bg-background/60 px-4 py-3 text-sm outline-none focus:border-primary/60 focus:bg-background placeholder:text-mutedfg/60"/></div>
+            <div><label class="mb-2 block text-xs font-mono uppercase tracking-widest text-mutedfg">Work email</label><input type="email" required placeholder="you@company.com" class="w-full rounded-xl border border-white/10 bg-background/60 px-4 py-3 text-sm outline-none focus:border-primary/60 focus:bg-background placeholder:text-mutedfg/60"/></div>
+            <div><label class="mb-2 block text-xs font-mono uppercase tracking-widest text-mutedfg">Phone</label><input type="tel" placeholder="+91 ..." class="w-full rounded-xl border border-white/10 bg-background/60 px-4 py-3 text-sm outline-none focus:border-primary/60 focus:bg-background placeholder:text-mutedfg/60"/></div>
+          </div>
+          <div class="mt-5">
+            <label class="mb-2 block text-xs font-mono uppercase tracking-widest text-mutedfg">How can we help?</label>
+            <textarea required rows="5" placeholder="Tell us about your AI initiative…" class="w-full resize-none rounded-xl border border-white/10 bg-background/60 px-4 py-3 text-sm outline-none focus:border-primary/60 focus:bg-background placeholder:text-mutedfg/60"></textarea>
+          </div>
+          <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand px-6 py-4 text-sm font-semibold text-background shadow-glow hover:shadow-[0_0_60px_-10px_rgba(0,229,255,.7)] transition">Send message →</button>
+          <p class="mt-3 flex items-center justify-center gap-2 text-xs text-mutedfg">🔒 We respect your privacy. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative border-t border-white/5 bg-background/80 pt-20 pb-8 backdrop-blur">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <svg width="40" height="40"><use href="#logoN"/></svg>
+          <span class="flex flex-col leading-none">
+            <span class="font-display text-lg font-bold">TejNext<span class="text-gradient-cyan"> AI</span></span>
+            <span class="text-[9px] font-mono uppercase tracking-[.18em] text-mutedfg">Transforming ideas into intelligence</span>
+          </span>
+        </div>
+        <p class="mt-5 max-w-sm text-sm text-mutedfg leading-relaxed">TejNext AI builds enterprise-grade artificial intelligence, analytics, and automation platforms that turn data into competitive advantage.</p>
+        <div class="mt-6 space-y-2 text-sm text-mutedfg">
+          <a href="mailto:tejnext.ai@gmail.com" class="flex items-center gap-2 hover:text-primary">✉ tejnext.ai@gmail.com</a>
+          <a href="tel:+918121437353" class="flex items-center gap-2 hover:text-primary">☎ +91 8121 437 353</a>
+          <a href="https://www.tejnext.com" class="flex items-center gap-2 hover:text-primary">🌐 www.tejnext.com</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="mb-4 font-display text-sm font-semibold uppercase tracking-wider">Solutions</h4>
+        <ul class="space-y-2.5 text-sm text-mutedfg">
+          <li><a href="#" class="hover:text-primary">AI Solutions</a></li><li><a href="#" class="hover:text-primary">Machine Learning</a></li>
+          <li><a href="#" class="hover:text-primary">Generative AI</a></li><li><a href="#" class="hover:text-primary">AI Agents</a></li><li><a href="#" class="hover:text-primary">Automation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-4 font-display text-sm font-semibold uppercase tracking-wider">Products</h4>
+        <ul class="space-y-2.5 text-sm text-mutedfg">
+          <li><a href="#" class="hover:text-primary">NetrAInsights</a></li><li><a href="#" class="hover:text-primary">Compensation Analytics</a></li>
+          <li><a href="#" class="hover:text-primary">AI Chat Assistant</a></li><li><a href="#" class="hover:text-primary">Smart Analytics Hub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-4 font-display text-sm font-semibold uppercase tracking-wider">Company</h4>
+        <ul class="space-y-2.5 text-sm text-mutedfg">
+          <li><a href="#about" class="hover:text-primary">About</a></li><li><a href="#" class="hover:text-primary">Founder</a></li>
+          <li><a href="#blog" class="hover:text-primary">Blog</a></li><li><a href="#contact" class="hover:text-primary">Contact</a></li><li><a href="#" class="hover:text-primary">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-white/5 pt-8">
+      <p class="text-xs text-mutedfg">© <span id="yr"></span> TejNext AI. All rights reserved. Built in India.</p>
+      <div class="flex items-center gap-2">
+        <a href="https://linkedin.com/in/tejnext.ai" aria-label="LinkedIn" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-mutedfg hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition">in</a>
+        <a href="https://youtube.com/@tejnext.ai" aria-label="YouTube" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-mutedfg hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition">▶</a>
+        <a href="https://instagram.com/tejnext.ai" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-mutedfg hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition">◎</a>
+        <a href="https://facebook.com/tejnext.ai" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-mutedfg hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition">f</a>
+        <a href="https://x.com/tejnext_ai" aria-label="X" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-mutedfg hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition">𝕏</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"TejNext AI","url":"https://www.tejnext.com","email":"tejnext.ai@gmail.com","telephone":"+91-8121437353","founder":{"@type":"Person","name":"Prabhakara Changala"},"description":"TejNext AI builds enterprise-grade AI, ML, Generative AI, Analytics and Automation solutions.","sameAs":["https://linkedin.com/in/tejnext.ai","https://youtube.com/@tejnext.ai","https://instagram.com/tejnext.ai","https://facebook.com/tejnext.ai","https://x.com/tejnext_ai"]}
+</script>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Mobile menu
+document.getElementById('mBtn').onclick = () => document.getElementById('mMenu').classList.toggle('hidden');
+
+// Nav scroll
+const nav = document.getElementById('navInner');
+const navWrap = document.getElementById('nav');
+addEventListener('scroll', () => {
+  const s = scrollY > 20;
+  navWrap.classList.toggle('py-2', s); navWrap.classList.toggle('py-4', !s);
+  nav.classList.toggle('glass-strong', s); nav.classList.toggle('shadow-elevated', s); nav.classList.toggle('glass', !s);
+});
+
+// Reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Services
+const services = [
+  ['🧠','Artificial Intelligence Solutions'],['⚙️','Machine Learning Models'],['✦','Generative AI Applications'],
+  ['🤖','AI Agents & Copilots'],['⚡','Intelligent Automation'],['🗄','Data Engineering'],
+  ['◧','Microsoft Fabric Solutions'],['📊','Power BI Analytics'],['☁','Cloud Architecture'],
+  ['⟨/⟩','Azure Development'],['⟨/⟩','Custom Software Development'],['🏢','Enterprise Digital Transformation'],
+];
+document.getElementById('servicesGrid').innerHTML = services.map(([i,t],n)=>`
+  <div class="group relative bg-background p-7 hover:bg-gradient-to-br hover:from-primary/5 hover:to-secondary/5 transition reveal">
+    <div class="absolute right-7 top-7 text-xs font-mono text-mutedfg/60">${String(n+1).padStart(2,'0')}</div>
+    <div class="mb-6 grid h-11 w-11 place-items-center rounded-lg border border-primary/20 bg-primary/5 text-primary text-lg group-hover:scale-110 transition">${i}</div>
+    <h3 class="text-base font-semibold leading-snug">${t}</h3>
+  </div>`).join('');
+
+// Products
+const products = [
+  ['NetrAInsights','Workforce Intelligence','AI-powered workforce intelligence platform that turns HR data into predictive talent decisions.','from-cyan-400 to-blue-500'],
+  ['Compensation Analytics','Provider Compensation','Healthcare provider compensation analytics with benchmarking, modeling, and payout transparency.','from-violet-400 to-fuchsia-500'],
+  ['AI Chat Assistant','Enterprise Knowledge','Enterprise knowledge assistant grounded in your documents, policies, and live systems of record.','from-emerald-400 to-teal-500'],
+  ['Smart Analytics Hub','Decision Intelligence','Real-time decision intelligence platform unifying telemetry, KPIs, and AI recommendations.','from-amber-400 to-rose-500'],
+];
+document.getElementById('productsGrid').innerHTML = products.map(([n,tag,d,c])=>`
+  <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-card p-8 hover:border-primary/40 transition reveal">
+    <div class="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-gradient-to-br ${c} opacity-20 blur-3xl"></div>
+    <div class="relative">
+      <span class="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[10px] font-mono uppercase tracking-widest text-mutedfg">${tag}</span>
+      <h3 class="mt-5 text-3xl font-bold tracking-tight">${n}</h3>
+      <p class="mt-3 max-w-md text-sm text-mutedfg leading-relaxed">${d}</p>
+      <div class="mt-8 flex flex-wrap gap-2">${['RAG','GPT-4o','Azure','PostgreSQL'].map(x=>`<span class="rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[10px] uppercase text-mutedfg">${x}</span>`).join('')}</div>
+      <a href="#contact" class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent">Request a walkthrough →</a>
+    </div>
+  </div>`).join('');
+
+// Industries
+const industries = [['❤','Healthcare'],['🏛','Finance'],['🛍','Retail'],['🏭','Manufacturing'],['🎓','Education'],['👥','Human Resources'],['☂','Insurance']];
+document.getElementById('industriesGrid').innerHTML = industries.map(([i,n])=>`
+  <div class="group flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-card/50 p-6 text-center backdrop-blur hover:-translate-y-1 hover:border-primary/40 transition reveal">
+    <div class="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-primary/15 to-secondary/15 text-primary text-2xl">${i}</div>
+    <span class="text-sm font-medium">${n}</span>
+  </div>`).join('');
+
+// Timeline
+const tl = [
+  ['2023','TejNext AI founded with a mission to democratize enterprise AI.'],
+  ['2024','Launched NetrAInsights workforce intelligence platform.'],
+  ['2025','Expanded into healthcare analytics and Microsoft Fabric partnerships.'],
+  ['2026','Pioneering autonomous AI agents for the intelligent enterprise.'],
+];
+document.getElementById('timeline').innerHTML = tl.map(([y,e],i)=>`
+  <div class="relative grid md:grid-cols-2 gap-4 md:gap-12 reveal ${i%2?'md:[&>div:first-child]:order-2':''}">
+    <div class="pl-12 md:pl-0 ${i%2===0?'md:text-right md:pr-12':'md:pl-12'}">
+      <div class="text-3xl font-bold text-gradient-cyan">${y}</div>
+      <p class="mt-2 text-mutedfg">${e}</p>
+    </div>
+    <div class="hidden md:block"></div>
+    <div class="absolute left-4 md:left-1/2 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_20px_rgba(0,229,255,.8)]"></div>
+  </div>`).join('');
+
+// Why us
+const why = [
+  ['🧠','AI-First Approach','Every solution begins with intelligence, not just data.'],
+  ['🛡','Enterprise-Grade Security','SOC 2 mindset, zero-trust by design, encryption everywhere.'],
+  ['☁','Cloud-Native Architecture','Built for Azure, multi-cloud ready, infinitely elastic.'],
+  ['📊','Data-Driven Decisions','We instrument outcomes, not vanity metrics.'],
+  ['🚀','Scalable Solutions','From pilot to production to planet-scale.'],
+  ['⚡','Faster Time-to-Market','Ship AI to production in weeks, not quarters.'],
+];
+document.getElementById('whyGrid').innerHTML = why.map(([i,t,d])=>`
+  <div class="group relative overflow-hidden rounded-2xl border border-white/10 bg-card/60 p-7 backdrop-blur hover:border-primary/40 transition reveal">
+    <div class="flex items-start gap-4">
+      <div class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary text-xl">${i}</div>
+      <div><h3 class="text-lg font-semibold">${t}</h3><p class="mt-1.5 text-sm text-mutedfg leading-relaxed">${d}</p></div>
+    </div>
+  </div>`).join('');
+
+// Tech
+const tech = ['Azure','.NET','Angular','Python','OpenAI','Microsoft Fabric','SQL Server','Power BI','Machine Learning','Generative AI','LangChain','Vector DBs'];
+document.getElementById('techGrid').innerHTML = tech.map(t=>`
+  <div class="group flex items-center justify-center rounded-2xl border border-white/10 bg-card/60 px-4 py-6 text-center backdrop-blur hover:-translate-y-1 hover:border-primary/40 hover:bg-gradient-to-br hover:from-primary/5 hover:to-secondary/5 transition reveal">
+    <span class="font-display text-sm font-semibold group-hover:text-primary transition">${t}</span>
+  </div>`).join('');
+
+// Testimonials
+const tests = [
+  ['TejNext AI moved our analytics roadmap forward by 18 months. The AI agents now handle work our team used to dread.','VP of Engineering','Fortune 500 Healthcare'],
+  ['Their depth on Microsoft Fabric and Generative AI is unmatched. We shipped a copilot to production in six weeks.','Chief Data Officer','Global Insurance Provider'],
+  ['An enterprise partner that feels like an in-house AI team — but with ten years of pattern-matching across industries.','Head of Innovation','FinTech Scale-up'],
+];
+document.getElementById('testGrid').innerHTML = tests.map(([q,n,c])=>`
+  <figure class="flex flex-col rounded-3xl border border-white/10 bg-card/60 p-8 backdrop-blur hover:border-primary/40 transition reveal">
+    <div class="flex gap-1 text-accent">${'★'.repeat(5).split('').map(s=>`<span>${s}</span>`).join('')}</div>
+    <blockquote class="mt-5 grow text-base leading-relaxed text-foreground/90">"${q}"</blockquote>
+    <figcaption class="mt-6 border-t border-white/10 pt-5"><div class="font-semibold">${n}</div><div class="text-sm text-mutedfg">${c}</div></figcaption>
+  </figure>`).join('');
+
+// Blog list
+const blog = [
+  ['Fundamentals','AI vs Machine Learning: A 2026 Leader\'s Guide','May 2026','6 min'],
+  ['Architecture','Designing for Microsoft Fabric at Scale','May 2026','10 min'],
+  ['Agents','Building Enterprise-Ready AI Agents','Apr 2026','12 min'],
+  ['Analytics','Workforce Intelligence: Beyond the Dashboard','Apr 2026','7 min'],
+];
+document.getElementById('blogList').innerHTML = blog.map(([tag,t,d,r])=>`
+  <a href="#" class="group flex items-center justify-between gap-6 rounded-2xl border border-white/10 bg-card/60 p-5 backdrop-blur hover:-translate-y-0.5 hover:border-primary/40 transition reveal">
+    <div class="min-w-0">
+      <div class="flex items-center gap-3 text-[11px] font-mono uppercase tracking-widest text-mutedfg">
+        <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5">${tag}</span>${d} · ${r}
+      </div>
+      <h4 class="mt-2 text-base font-semibold group-hover:text-primary transition">${t}</h4>
+    </div>
+    <span class="text-mutedfg group-hover:text-primary transition">↗</span>
+  </a>`).join('');
+
+// re-observe new reveals
+document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+
+// Neural canvas
+(function(){
+  const c = document.getElementById('neural'); if(!c) return;
+  const ctx = c.getContext('2d'); let w=0,h=0; const dpr = Math.min(devicePixelRatio||1,2);
+  let parts = [];
+  function resize(){
+    w = c.clientWidth; h = c.clientHeight; c.width = w*dpr; c.height = h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.min(80, Math.floor((w*h)/18000));
+    parts = Array.from({length:n}, ()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.6+.6}));
+  }
+  function tick(){
+    ctx.clearRect(0,0,w,h);
+    for(const p of parts){ p.x+=p.vx; p.y+=p.vy; if(p.x<0||p.x>w)p.vx*=-1; if(p.y<0||p.y>h)p.vy*=-1; }
+    const md=140;
+    for(let i=0;i<parts.length;i++) for(let j=i+1;j<parts.length;j++){
+      const a=parts[i],b=parts[j]; const d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(d<md){ const o=(1-d/md)*.35; const g=ctx.createLinearGradient(a.x,a.y,b.x,b.y);
+        g.addColorStop(0,`rgba(0,229,255,${o})`); g.addColorStop(1,`rgba(124,58,237,${o})`);
+        ctx.strokeStyle=g; ctx.lineWidth=.6; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+      }
+    }
+    for(const p of parts){ ctx.beginPath(); ctx.fillStyle='rgba(0,229,255,.85)'; ctx.shadowBlur=8; ctx.shadowColor='rgba(0,229,255,.8)'; ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill(); }
+    ctx.shadowBlur=0; requestAnimationFrame(tick);
+  }
+  resize(); tick(); addEventListener('resize', resize);
+})();
+</script>
+</body>
+</html>
